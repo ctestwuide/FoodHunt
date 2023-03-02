@@ -1,7 +1,7 @@
 main {
     position: static;
     margin-top: 60px;
-    background-image: url("./background.jpg");
+    background-image: url("assets/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
