@@ -1,0 +1,47 @@
+main {
+    position: static;
+    margin-top: 60px;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+
+footer {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 6em;
+    font-size: small;
+    text-align: center;
+    background-color: #f8f9fa;
+
+}
+
+.empty-row {
+    height: 60px;
+    background-color: transparent;
+}
+
+.btn-group {
+    width: 50%;
+}
+
+#forgot-password {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+}
