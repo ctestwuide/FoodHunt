@@ -1,0 +1,115 @@
+.navbar {
+    position: static;
+    top: 0;
+    width: 100%;
+}
+
+
+#home-bar {
+    background-color: #ba80fb;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.home-button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(192, 192, 192, 0.952);
+    width: 10rem;
+    text-align: center;
+    color: black;
+}
+
+#home-bar a {
+    text-decoration: none;
+}
+
+
+.save-bar {
+    background-color: #e6e6e6;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.save-button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(192, 192, 192, 0.952);
+    width: 8rem;
+    text-align: center;
+}
+
+.cancel-button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(192, 192, 192, 0.952);
+    width: 8rem;
+    text-align: center;
+}
+
+main {
+    background-color: #e6e6e6;
+    padding-bottom: 30px;
+    
+}
+
+.profile-pic-area {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.new-pic {
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+#profile-data {
+    margin-left: 75px;
+    margin-top: 50px;
+    width: 65%;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.contact-info {
+    background-color: #f8f9fa;
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+#social-media {
+    height: 100px; /* set a fixed height */
+    text-align: center;
+    display: flex; /* use flexbox to align items */
+    align-items: flex-end; /* align items to the bottom */
+    justify-content: flex-end;
+}
+
+#social-media img {
+    margin-right: 5px;
+}
+
+footer {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 3em;
+    font-size: small;
+    text-align: center;
+    background-color: #ba80fb;
+}

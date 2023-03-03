@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FoodHunt Profile Page</title>
+
+    <link rel="stylesheet" href="./profilepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Logo" width="75" height="75">
+                <span class="ms-2" id="navbar-foodhunt">FoodHunt</span>
+              </a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                      <img src="assets/blank-profile-image.png" height="50px" width="50px">
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+
+                    <div class="home-button-area">
+
+                        <a href="#">
+                            <text class="home-button" type="button"><strong>Home</strong></button>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-10"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="save-bar">
+
+        <div class="container-fluid">
+    
+            <div class="row">
+    
+                <div class="col-3">
+    
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        </ol>
+                    </nav>
+    
+                </div>
+    
+                <div class="col-5 text-end">
+                    
+                </div>
+    
+                <div class="col-4">
+                    <button class="save-button" type="button"><strong>Save</strong></button>
+                    <button class="cancel-button" type="button"><strong>Cancel</strong></button>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <main>
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-3">
+
+                    <div class="profile-pic-area">
+
+                        <img src="assets/blank-profile-image.png" alt="profile picture" height="250px" width="250px">
+
+                    </div>
+
+                    <div class="new-pic">
+
+                        <input type="file" id="profile-pic-upload" name="profile-pic">
+
+                    </div>
+
+                </div>
+
+                <div class="col-8" id="profile-data">
+
+                    <div class="row">
+                        
+                        <div class="mb-3 row">
+                            <label for="staticName" class="col-sm-2 col-form-label"><strong>Name</strong></label>
+                            <div class="col-sm-10">
+                              <input type="text" readonly class="form-control-plaintext" id="staticName" value="Johnny Appleseed">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label"><strong>Email</strong></label>
+                            <div class="col-sm-10">
+                              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="staticPhone" class="col-sm-2 col-form-label"><strong>Phone</strong></label>
+                            <div class="col-sm-10">
+                              <input type="text" readonly class="form-control-plaintext" id="staticPhone" value="4401413302000">
+                            </div>
+                        </div>
+                          
+                        <div class="mb-3 row">
+                            <label for="inputChangePassword" class="col-sm-3 col-form-label"><strong>Change Password</strong></label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputChangePassword">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="inputConfirmPassword" class="col-sm-3 col-form-label"><strong>Confirm Password</strong></label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputConfirmPassword">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row" id="my-reviews">
+
+                        <div class="col-8">
+
+                            <P><strong>My Reviews</strong></h5>
+
+                                <div class="box">
+                                    <img src="assets/blank-profile-image.png" height="60px" width="60px">
+                                    <span><strong>Review 1</strong></span>
+                                </div>
+        
+                                <div class="box">
+                                    <img src="assets/blank-profile-image.png" height="60px" width="60px">
+                                    <span><strong>Review 2</strong></span>
+                                </div>
+        
+                                <div class="box">
+                                    <img src="assets/blank-profile-image.png" height="60px" width="60px">
+                                    <span><strong>Review 3</strong></span>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-1"></div>
+
+
+            </div>
+
+        </div>
+        
+    </main>
+        
+    <section class="contact-info">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-2">
+
+                    <img src="assets/logo.png" alt="Logo" width="75" height="75">
+                    <br>
+
+                    <span>Address - Univeristy of Glasgow</span>
+                    <span>Email - contact@foodhunt.com</span>
+                    <span>Phone - +44(0)141 330 2000</span>
+                    <br>
+
+                </div>
+
+                <div class="col-7"></div>
+
+                <div class="col-3" id="social-media">
+
+                    <img src="assets/instagram-icon.png" alt="instagram icon">
+                    <img src="assets/twitter-icon.png" alt="twitter icon">
+                    <img src="assets/youtube-icon.png" alt="youtube icon">
+                    <img src="assets/linkedIn-icon.png" alt="linkedin icon">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+
+            <span>Copyright &copy; 2023 FoodHunt</span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>

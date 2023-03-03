@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FoodHunt Homepage</title>
+
+    <link rel="stylesheet" href="./homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Logo" width="75" height="75">
+                <span class="ms-2" id="navbar-foodhunt">FoodHunt</span>
+              </a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                      <button type="button" class="btn btn-light"><strong>Sign Up</strong></button>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                      <button type="button" class="btn btn-light"><strong>Log In</strong></button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="search-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7"></div>
+                <div class="col-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search by name or location">
+                        <button class="btn btn-outline-secondary" type="button">Name</button>
+                        <button class="btn btn-outline-secondary" type="button">Location</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="top-restaurants">
+        <div class="container-fluid">
+            <div class="row">
+                <h5>Cuisine ideas to get you hungry!</h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="category-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                    <img src="assets/americanfood.png" alt="American Food" height="75px" width="75px">
+                    <span>American</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/breakfastfood.png" alt="Breakfast Food" height="75px" width="75px">
+                    <span>Breakfast</span>
+                 </div>
+                <div class="col-1">
+                    <img src="assets/chinesefood.png" alt="Chinese Food" height="75px" width="75px">
+                    <span>Chinese</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/comfortfood.png" alt="Comfort Food" height="75px" width="75px">
+                    <span>Comfort</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/indianfood.png" alt="Indian Food" height="75px" width="75px">
+                    <span>Indian</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/italianfood.png" alt="Italian Food" height="75px" width="75px">
+                    <span>Italian</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/pizza.png" alt="Pizza" height="75px" width="75px">
+                    <span>Pizza</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/scottishfood.png" alt="Scottish Food" height="75px" width="75px">
+                    <span>Scottish</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/seafood.png" alt="Seafood" height="75px" width="75px">
+                    <span>Seafood</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/sushi.png" alt="Sushi" height="75px" width="75px">
+                    <span>Sushi</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/tacos.png" alt="Tacos" height="75px" width="75px">
+                    <span>Tacos</span>
+                </div>
+                <div class="col-1">
+                    <img src="assets/thai.png" alt="Thai Food" height="75px" width="75px">
+                    <span>Thai</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sort-by">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8"></div>
+
+                <div class="col-4">
+                    <span><strong>Sort By:</strong></span>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Choose Method
+                    </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Rating</a></li>
+                            <li><a class="dropdown-item" href="#">Price: high to low</a></li>
+                            <li><a class="dropdown-item" href="#">Price: low to high</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-3 restaurant-filters">
+
+                    <div class="filter-card">
+
+                        <div class="card" style="width: 17rem;">
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item" id="filter-header">
+                                    <strong>Filters</strong>
+                                </li>
+
+
+                            
+                              <li class="list-group-item">
+
+                                <p><strong>Price</strong> (£)</p>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="0-20" Checked>
+                                    <label class="form-check-label" for="0-20">
+                                      0 - 20
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="20-50">
+                                    <label class="form-check-label" for="20-50">
+                                      20-50
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="50-100">
+                                    <label class="form-check-label" for="50-100">
+                                      50-100
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="100+" >
+                                    <label class="form-check-label" for="100+">
+                                      100+
+                                    </label>
+                                </div>
+
+                              </li>
+
+                              <li class="list-group-item">
+
+                                <p><strong>Category</strong> (dietary restrictions)</p>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Vegetarian" Checked>
+                                    <label class="form-check-label" for="Vegetarian">
+                                      Vegetarian
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Non-Vegetarian">
+                                    <label class="form-check-label" for="Non-Vegetarian">
+                                        Non-Vegetarian
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Both">
+                                    <label class="form-check-label" for="Both">
+                                      Both
+                                    </label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Gluten Free" >
+                                    <label class="form-check-label" for="Gluten Free">
+                                        Gluten Free
+                                    </label>
+                                </div>
+
+                              </li>
+
+                              <li class="list-group-item">
+
+                                <p><strong>Overall Rating</strong> (in stars)</p>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="1-star" Checked>
+                                    <label class="form-check-label" for="1-star">
+                                        ⭐
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="2-star">
+                                    <label class="form-check-label" for="2-star">
+                                        ⭐⭐
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="3-star">
+                                    <label class="form-check-label" for="3-star">
+                                        ⭐⭐⭐
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="4-star">
+                                    <label class="form-check-label" for="4-star">
+                                        ⭐⭐⭐⭐
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="5-star">
+                                    <label class="form-check-label" for="5-star">
+                                        ⭐⭐⭐⭐⭐
+                                    </label>
+                                </div>
+
+                              </li>
+                            </ul>
+                          </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-3">
+                    
+                    <div class="row">
+                        <div class="card p-0"  >
+                            <img src="assets/empty-restaurant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Restaurant Name</h5>
+                              <p class="card-location">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                
+                                Restaurant Location</p>
+
+                              <p class="card-text">Restaurant bio about how it's a great restaurant. Amazing food, excellent service, and outstanding atmosphere!</p>
+                              
+                              <div class="restaurant-facts">
+                                <div class="box">
+                                    <p>Price</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Category</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Rating</p>
+                                </div>
+
+                                </div>
+
+                                <div class="restaurant-details">
+                                <a href="#" class="details-link">
+                                    <div class="details-box">
+                                        <p>Check it Out!</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="card p-0"  >
+                            <img src="assets/empty-restaurant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Restaurant Name</h5>
+                              <p class="card-location">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                
+                                Restaurant Location</p>
+
+                              <p class="card-text">Restaurant bio about how it's a great restaurant. Amazing food, excellent service, and outstanding atmosphere!</p>
+                              
+                              <div class="restaurant-facts">
+                                <div class="box">
+                                    <p>Price</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Category</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Rating</p>
+                                </div>
+
+                                </div>
+
+                                <div class="restaurant-details">
+                                <a href="#" class="details-link">
+                                    <div class="details-box">
+                                        <p>Check it Out!</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+                <div class="col-3">
+                    
+                    <div class="row">
+                        <div class="card p-0"  >
+                            <img src="assets/empty-restaurant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Restaurant Name</h5>
+                              <p class="card-location">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                
+                                Restaurant Location</p>
+
+                              <p class="card-text">Restaurant bio about how it's a great restaurant. Amazing food, excellent service, and outstanding atmosphere!</p>
+                              
+                              <div class="restaurant-facts">
+                                <div class="box">
+                                    <p>Price</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Category</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Rating</p>
+                                </div>
+
+                                </div>
+
+                                <div class="restaurant-details">
+                                <a href="#" class="details-link">
+                                    <div class="details-box">
+                                        <p>Check it Out!</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="card p-0"  >
+                            <img src="assets/empty-restaurant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Restaurant Name</h5>
+                              <p class="card-location">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                
+                                Restaurant Location</p>
+
+                              <p class="card-text">Restaurant bio about how it's a great restaurant. Amazing food, excellent service, and outstanding atmosphere!</p>
+                              
+                              <div class="restaurant-facts">
+                                <div class="box">
+                                    <p>Price</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Category</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Rating</p>
+                                </div>
+
+                                </div>
+
+                                <div class="restaurant-details">
+                                <a href="#" class="details-link">
+                                    <div class="details-box">
+                                        <p>Check it Out!</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+                <div class="col-3">
+                    
+                    <div class="row">
+                        <div class="card p-0"  >
+                            <img src="assets/empty-restaurant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Restaurant Name</h5>
+                              <p class="card-location">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                
+                                Restaurant Location</p>
+
+                              <p class="card-text">Restaurant bio about how it's a great restaurant. Amazing food, excellent service, and outstanding atmosphere!</p>
+                              
+                              <div class="restaurant-facts">
+                                <div class="box">
+                                    <p>Price</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Category</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Rating</p>
+                                </div>
+
+                                </div>
+
+                                <div class="restaurant-details">
+                                <a href="#" class="details-link">
+                                    <div class="details-box">
+                                        <p>Check it Out!</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="card p-0"  >
+                            <img src="assets/empty-restaurant.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Restaurant Name</h5>
+                              <p class="card-location">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                                
+                                Restaurant Location</p>
+
+                              <p class="card-text">Restaurant bio about how it's a great restaurant. Amazing food, excellent service, and outstanding atmosphere!</p>
+                              
+                              <div class="restaurant-facts">
+                                <div class="box">
+                                    <p>Price</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Category</p>
+                                </div>
+
+                                <div class="box">
+                                    <p>Rating</p>
+                                </div>
+
+                                </div>
+
+                                <div class="restaurant-details">
+                                <a href="#" class="details-link">
+                                    <div class="details-box">
+                                        <p>Check it Out!</p>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+        
+    <section class="contact-info">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-2">
+
+                    <img src="assets/logo.png" alt="Logo" width="75" height="75">
+                    <br>
+
+                    <span>Address - Univeristy of Glasgow</span>
+                    <span>Email - contact@foodhunt.com</span>
+                    <span>Phone - +44(0)141 330 2000</span>
+                    <br>
+
+                </div>
+
+                <div class="col-7"></div>
+
+                <div class="col-3" id="social-media">
+
+                    <img src="assets/instagram-icon.png" alt="instagram icon">
+                    <img src="assets/twitter-icon.png" alt="twitter icon">
+                    <img src="assets/youtube-icon.png" alt="youtube icon">
+                    <img src="assets/linkedIn-icon.png" alt="linkedin icon">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+
+            <span>Copyright &copy; 2023 FoodHunt</span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
