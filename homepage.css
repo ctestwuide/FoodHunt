@@ -13,11 +13,11 @@ footer {
     height: 3em;
     font-size: small;
     text-align: center;
-    background-color: #ba80fb;
+    background-color: #8fa9ea;
 }
 
 #search-bar {
-    background-color: #ba80fb;
+    background-color: #8fa9ea;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ footer {
 }
 
 #sort-by {
-    border-top: 2px solid #ba80fb;
+    border-top: 2px solid #8fa9ea;
     padding-top: 10px;
     background-color: #e6e6e6;
     text-align: right;
@@ -79,16 +79,16 @@ main .row {
     padding: 5px;
     width:32%;
     display: inline-block;
-    border: 3px solid #ba80fb;
+    border: 3px solid #8fa9ea;
   }
   
 .box p {
-    color: #ba80fb;
+    color: #8fa9ea;
     margin: 0;
   }
 
 .details-box{
-    background-color: #ba80fb;
+    background-color: #8fa9ea;
     border-radius: 10px;
     padding: 5px;
     width: 100%;
@@ -105,7 +105,7 @@ main .row {
 
 #filter-header {
     text-align: center;
-    background-color: #ba80fb;
+    background-color: #8fa9ea;
     color: white;
 }
 

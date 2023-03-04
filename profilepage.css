@@ -6,7 +6,7 @@
 
 
 #home-bar {
-    background-color: #ba80fb;
+    background-color: #8fa9ea;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -111,5 +111,5 @@ footer {
     height: 3em;
     font-size: small;
     text-align: center;
-    background-color: #ba80fb;
+    background-color: #8fa9ea;
 }
