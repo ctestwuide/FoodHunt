@@ -172,3 +172,13 @@ body {
     float: right;
     text-align: right;
 }
+
+#overall-rating{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.value{
+    float: right;
+    text-align: right;
+}
