@@ -122,7 +122,7 @@ footer {
     font-size: 12px;
 }
 
-body {
+body, html {
     background-color: darkgray;
 }
 
@@ -136,16 +136,6 @@ body {
     border-style: solid;
     border-radius: 5px;
 }
-
-/*#review-title{*/
-/*    float: left;*/
-/*    text-align: left;*/
-/*}*/
-
-/*#add-review{*/
-/*    float: right;*/
-/*    text-align: right;*/
-/*}*/
 
 .col-md-4 * {
     margin-right: 30px;
@@ -163,22 +153,28 @@ body {
     margin-left: 20px;
 }
 
-#review-title{
+#review-title {
     float: left;
     text-align: left;
 }
 
-#add-review{
+#add-review {
     float: right;
     text-align: right;
 }
 
-#overall-rating{
+#overall-rating {
     font-weight: 600;
     font-size: 20px;
 }
 
-.value{
+.value {
     float: right;
     text-align: right;
+}
+
+.rating-item {
+    float: left;
+    text-align: left;
+    margin: auto;
 }
