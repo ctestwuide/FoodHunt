@@ -55,12 +55,14 @@
 
     <div class="row g-5">
         <div class="col-md-8">
-            <div class="pb-4 mb-4 fst-italic border-bottom">
-                <span id="name">From the Firehose</span>
-                <span id="price">£ 00.00 - £ 00.00</span>
+            <div >
+                <h3 id="name">Name of the Restaurant<label id="price">£ 00.00 - £ 00.00</label></h3>
+
                 <br>
                 <br>
                 <span id="location">Location</span>
+                <br>
+                <br>
             </div>
 
             <article class="blog-post">
@@ -70,64 +72,58 @@
                 <p>Italian / Indian/.....</p>
                 <hr>
                 <h2>Category</h2>
-                <span>Veg</span>
-                <span>Non-veg</span>
-
+                <input type="radio" name="category" checked> Veg <input type="radio" name="category"> Non-Veg
                 <hr>
                 <h2>Description</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur ea eveniet illo incidunt inventore numquam pariatur voluptatum? Accusantium consectetur cum dolor doloremque id ipsa neque officia optio quis ullam.</p>
                 <hr>
 
                 <div id="rating">
-                <span class="rating-item" id="overall-rating">Overall Rating</span>
-                <span class="value">5</span>
-                <br><br>
-                <span class="rating-item">Average Rating for Food</span>
-                <span class="value">5</span>
-                <br>
-                <span class="rating-item">Average Rating for Services</span>
-                <span class="value">5</span>
-                <br>
-                <span class="rating-item">Average Rating for Ambience</span>
-                <span class="value">5</span>
-                <br>
-                <span class="rating-item">Average Rating for Price</span>
-                <span class="value">5</span>
+                    <span class="rating-item" id="overall-rating">Overall Rating</span>
+                    <span class="value">5</span>
+                    <br><br>
+                    <span class="rating-item">Average Rating for Food</span>
+                    <span class="value">5</span>
+                    <br>
+                    <span class="rating-item">Average Rating for Services</span>
+                    <span class="value">5</span>
+                    <br>
+                    <span class="rating-item">Average Rating for Ambience</span>
+                    <span class="value">5</span>
+                    <br>
+                    <span class="rating-item">Average Rating for Price</span>
+                    <span class="value">5</span>
                 </div>
 
             </article>
         </div>
 
         <div class="col-md-4">
-            <div class="position-sticky" style="top: 2rem;">
-                <div class="p-4 mb-3 bg-light rounded">
-                    <span id="review-title" class="fst-italic">Review</span>
-                    <span id="add-review" class="mb-0"><a href="#">Add review</a></span>
+            <aside>
+                    <h5 id="review-title" class="fst-italic">Review<label><a href="#" id="add-review">Add review</a></label></h5>
                     <hr>
-                </div>
 
-                <dl id="reviews">
-<!--                    <dt><span id="review-title">Review</span><span id="add-review">Add review</span></dt>-->
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 1</p></dd>
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 2</p></dd>
+                <ul id="reviews">
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 1</p></li>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 2</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 3</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 3</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 4</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 4</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 5</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 5</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 6</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 6</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 7</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 7</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 8</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 8</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 9</p></dd>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 9</p></li>
 
-                    <dd class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 10</p></dd>
-                </dl>
-        </div>
+                    <li class="reviewer"><img src="./assets/logo(small_size).png" alt="logo"><h6>Name of the reviewer</h6><p>Review 10</p></li>
+                </ul>
+            </aside>
     </div>
     </div>
 </main>
