@@ -35,47 +35,6 @@ footer {
     padding: 0;
 }
 
-.footprint ul {
-    list-style: none;
-    margin: auto;
-}
-
-#footprint_list li {
-    float: left;
-    padding: 3px;
-}
-
-.box1 {
-    position: absolute;
-    width: 100%;
-    box-sizing: content-box;
-}
-
-.box2 {
-    position: relative;
-    float: bottom;
-}
-
-/*#h1{*/
-/*    margin:30px 10px 10px 35px;*/
-/*    float: left;*/
-/*    text-align: left;*/
-/*    position: relative;*/
-/*}*/
-
-/*#price{*/
-/*    margin:30px 35px 10px 10px;*/
-/*    float: right;*/
-/*    text-align: right;*/
-/*    position: relative;*/
-/*}*/
-
-/*#location{*/
-/*    margin:30px 10px 10px 35px;*/
-/*    float: bottom;*/
-/*    text-align: left;*/
-/*}*/
-
 #name {
     text-align: left;
     float: left;
@@ -109,19 +68,11 @@ footer {
     font-size: 18px;
 }
 
-/*#reviews {*/
-/*    list-style: none;*/
-/*    box-shadow: gray;*/
-/*    -webkit-box-shadow: 0px 0px 2px gray;*/
-/*    -moz-box-shadow: 0px 0px 2px gray;*/
-/*    box-shadow: 0px 0px 2px gray;*/
-/*    border-radius: 10px;*/
-/*}*/
-
 #reviews p {
     font-size: 12px;
 }
 
+<<<<<<< HEAD
 main {
     background-color: #e6e6e6;
     padding-bottom: 30px;
@@ -129,6 +80,9 @@ main {
 }
 
 body, html {
+=======
+body {
+>>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
     background-color: darkgray;
 }
 
@@ -145,35 +99,35 @@ body, html {
 }
 
 #reviews {
-    border-style: solid;
     border-radius: 5px;
+<<<<<<< HEAD
     background-color: #f8f9fa;
     
+=======
+    list-style: none;
+    border-style: none;
+>>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
 }
 
-.col-md-4 * {
-    margin-right: 30px;
-    margin-left: 15px;
+.reviewer list:last-child{
+    border-bottom-style: none;
 }
 
-.col-md-8 * {
+
+main{
+    width: 95%;
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 
 .restaurant-picture {
-    border-radius: 8px;
     width: 100%;
+    border-radius: 8px;
     margin-left: 20px;
 }
 
-#review-title {
-    float: left;
-    text-align: left;
-}
-
 #add-review {
-    float: right;
     text-align: right;
 }
 
@@ -206,15 +160,35 @@ body, html {
     margin: auto;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+.contact-info {
+    background-color: #f8f9fa;
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+>>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
 #social-media {
     height: 100px; /* set a fixed height */
     text-align: center;
     display: flex; /* use flexbox to align items */
     align-items: flex-end; /* align items to the bottom */
     justify-content: flex-end;
+<<<<<<< HEAD
     white-space: nowrap;
+=======
+>>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
 }
 
 #social-media img {
     margin-right: 5px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
