@@ -122,6 +122,12 @@ footer {
     font-size: 12px;
 }
 
+main {
+    background-color: #e6e6e6;
+    padding-bottom: 30px;
+    margin-top: -10px;
+}
+
 body, html {
     background-color: darkgray;
 }
@@ -130,11 +136,19 @@ body, html {
     border-bottom-style: solid;
     margin: auto;
     text-align: center;
+
+}
+
+.reviewer img {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #reviews {
     border-style: solid;
     border-radius: 5px;
+    background-color: #f8f9fa;
+    
 }
 
 .col-md-4 * {
@@ -163,6 +177,19 @@ body, html {
     text-align: right;
 }
 
+.write-review-btn {
+    all: unset;
+    background-color: #8fa9ea;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 18%;
+    margin-bottom: 10%;
+    padding-top: 2%;
+    padding-left: 3%;
+  }
+
 #overall-rating {
     font-weight: 600;
     font-size: 20px;
@@ -177,4 +204,17 @@ body, html {
     float: left;
     text-align: left;
     margin: auto;
+}
+
+#social-media {
+    height: 100px; /* set a fixed height */
+    text-align: center;
+    display: flex; /* use flexbox to align items */
+    align-items: flex-end; /* align items to the bottom */
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+
+#social-media img {
+    margin-right: 5px;
 }
