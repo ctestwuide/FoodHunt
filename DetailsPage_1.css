@@ -72,7 +72,6 @@ footer {
     font-size: 12px;
 }
 
-<<<<<<< HEAD
 main {
     background-color: #e6e6e6;
     padding-bottom: 30px;
@@ -80,9 +79,6 @@ main {
 }
 
 body, html {
-=======
-body {
->>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
     background-color: darkgray;
 }
 
@@ -100,13 +96,9 @@ body {
 
 #reviews {
     border-radius: 5px;
-<<<<<<< HEAD
     background-color: #f8f9fa;
-    
-=======
     list-style: none;
     border-style: none;
->>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
 }
 
 .reviewer list:last-child{
@@ -160,35 +152,15 @@ main{
     margin: auto;
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
-.contact-info {
-    background-color: #f8f9fa;
-    font-size: small;
-    padding-bottom: 10px;
-}
-
->>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
 #social-media {
     height: 100px; /* set a fixed height */
     text-align: center;
     display: flex; /* use flexbox to align items */
     align-items: flex-end; /* align items to the bottom */
     justify-content: flex-end;
-<<<<<<< HEAD
     white-space: nowrap;
-=======
->>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
 }
 
 #social-media img {
     margin-right: 5px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 08884954e57f0ed298364e420be267059fe4e7d1
