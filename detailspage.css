@@ -80,14 +80,14 @@ footer {
     text-align: left;
     float: left;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 #price {
     float: right;
     text-align: right;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 #location {
@@ -148,7 +148,7 @@ body, html {
     border-style: solid;
     border-radius: 5px;
     background-color: #f8f9fa;
-    
+    overflow-y: auto;
 }
 
 .col-md-4 * {
@@ -200,7 +200,7 @@ body, html {
     text-align: right;
 }
 
-.rating-item {
+.rating-item-main {
     float: left;
     text-align: left;
     margin: auto;
@@ -217,4 +217,131 @@ body, html {
 
 #social-media img {
     margin-right: 5px;
+}
+
+:root {
+  --width: min(1000px, 80vw);
+}
+
+.page-content {
+  max-width: var(--width);
+}
+
+.active .page {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.write-review-btn {
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: #8fa9ea;
+  transition: 0.3s;
+}
+
+.write-review-btn:hover {
+  filter: brightness(200%);
+}
+
+.write-review-btn:active {
+  filter: brightness(100%);
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(20%, 10%);
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  display: none;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: shrink;
+}
+
+.active .modal {
+  display: block;
+  animation-name: expand;
+}
+
+.modal-content {
+  width: var(--width);
+  max-height: 90vh;
+  padding: 50px;
+  margin: auto;
+  /* center overflow content */
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal-content h2 {
+  color: inherit;
+}
+
+.active .modal-content {
+  overflow-y: auto;
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+    max-height: 0;
+    color: transparent;
+  }
+  40% {
+    width: 6px;
+    color: transparent;
+  }
+  100% {
+    width: var(--width);
+    max-height: 100vh;
+    color: inherit;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: var(--width);
+    max-height: 100vh;
+    color: inherit;
+  }
+  60% {
+    width: 6px;
+    color: transparent;
+  }
+  100% {
+    width: 0;
+    max-height: 0;
+    color: transparent;
+  }
+}
+
+.modal-content h2{
+    text-align: center;
+}
+
+.modal-content p{
+    color: darkgray;
+}
+
+.rating-item{
+    text-align: left;
+    float: left;
+    color: gray;
+}
+
+#review-text{
+    color: gray;
+}
+
+.save-btn{
+    background-color: #8fa9ea;
 }
