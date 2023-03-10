@@ -345,3 +345,29 @@ body, html {
 .save-btn{
     background-color: #8fa9ea;
 }
+
+#restaurant-icon{
+    width: 25px;
+    float: left;
+}
+
+#selected{
+    width: 25px;
+}
+
+#unselected{
+    width: 25px;
+}
+
+#star{
+    width: 30px;
+}
+
+.star-small{
+    width: 20px;
+}
+
+.rating-score{
+    float: right;
+    text-align: right;
+}
